@@ -1,0 +1,11 @@
+class Solution {
+    public int trailingZeroes(int n) {
+        int l=0;
+        long m=5;
+        while(n/m>0) {
+            l+=n/m;
+            m*=5;
+        }
+        return l;
+    }
+}
